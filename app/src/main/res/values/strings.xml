@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">UserManagementApp</string>
+    <string name="default_name">John Doe</string>
+    <string name="default_email">john@example.com</string>
+    <string name="default_age">30</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="add_user">Add User</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_emailid">Enter EmailId</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="save">Save</string>
 </resources>
