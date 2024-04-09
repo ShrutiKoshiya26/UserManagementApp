@@ -1,11 +1,10 @@
-package com.usermanage.usercrud.roomdb.dbhelper
+package com.usermanage.usercrud.data.local
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.usermanage.usercrud.data.model.User
-import com.usermanage.usercrud.roomdb.dao.UserDao
 
 @Database(entities = [User::class], version = 1, exportSchema = true)
 abstract class UserDatabase : RoomDatabase() {
@@ -15,7 +14,6 @@ abstract class UserDatabase : RoomDatabase() {
     companion object {
         @Volatile
         private var INSTANCE: UserDatabase? = null
-
         fun getDatabase(context: Context): UserDatabase {
             return INSTANCE ?: synchronized(this) {
                 INSTANCE =

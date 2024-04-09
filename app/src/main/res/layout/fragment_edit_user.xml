@@ -114,7 +114,6 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/_14sdp"
             android:fontFamily="@font/roboto_medium_500"
-            android:foreground="?android:selectableItemBackground"
             android:text="@string/save"
             android:textColor="@color/white"
             android:textSize="@dimen/_12ssp"

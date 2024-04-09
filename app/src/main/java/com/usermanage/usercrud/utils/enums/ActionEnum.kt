@@ -1,5 +1,5 @@
 package com.usermanage.usercrud.utils.enums
 
-enum class Action {
+enum class ActionEnum {
     EDIT, DELETE
 }

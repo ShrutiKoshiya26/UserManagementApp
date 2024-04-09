@@ -7,10 +7,11 @@
     <string name="delete">Delete</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="no_data_found">No Data Found</string>
+    <string name="no_data_found">No Data Found \n\nPlease click on "'Add User'" to add records</string>
     <string name="add_user">Add User</string>
     <string name="enter_name">Enter Name</string>
     <string name="enter_emailid">Enter EmailId</string>
     <string name="enter_age">Enter Age</string>
     <string name="save">Save</string>
+    <string name="search_by_name">Search by name</string>
 </resources>

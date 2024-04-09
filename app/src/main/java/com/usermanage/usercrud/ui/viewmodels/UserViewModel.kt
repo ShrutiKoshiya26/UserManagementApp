@@ -1,5 +1,6 @@
 package com.usermanage.usercrud.ui.viewmodels
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.usermanage.usercrud.data.model.User
@@ -12,6 +13,11 @@ class UserViewModel(
 ) : ViewModel() {
 
     fun getAllUsers() = userRepository.getAllUsers()
+
+
+    fun searchUsersByName(name: String): LiveData<List<User>> {
+        return userRepository.searchUsersByName(name)
+    }
 
     fun insertUser(user: User) {
         viewModelScope.launch(Dispatchers.IO) {

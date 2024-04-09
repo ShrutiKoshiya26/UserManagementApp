@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.usermanage.usercrud.data.model.User
 import com.usermanage.usercrud.databinding.ItemUserBinding
-import com.usermanage.usercrud.utils.enums.Action
+import com.usermanage.usercrud.utils.enums.ActionEnum
 
-class UserAdapter(private val onActionClick: (User, Action) -> Unit) :
+class UserAdapter(private val onActionClick: (User, ActionEnum) -> Unit) :
     RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     private var users: List<User> = emptyList()
@@ -39,10 +39,10 @@ class UserAdapter(private val onActionClick: (User, Action) -> Unit) :
             binding.user = user
 
             binding.editButton.setOnClickListener {
-                onActionClick(user, Action.EDIT)
+                onActionClick(user, ActionEnum.EDIT)
             }
             binding.deleteButton.setOnClickListener {
-                onActionClick(user, Action.DELETE)
+                onActionClick(user, ActionEnum.DELETE)
             }
 
             binding.executePendingBindings()
