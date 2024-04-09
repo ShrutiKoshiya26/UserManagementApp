@@ -1,6 +1,6 @@
 package com.usermanage.usercrud.di;
 
-import android.app.Application;
+import com.usermanage.usercrud.application.App;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
@@ -22,7 +22,7 @@ import javax.annotation.processing.Generated;
     "KotlinInternalInJava",
     "cast"
 })
-public final class AppModule_ProvideApplicationFactory implements Factory<Application> {
+public final class AppModule_ProvideApplicationFactory implements Factory<App> {
   private final AppModule module;
 
   public AppModule_ProvideApplicationFactory(AppModule module) {
@@ -30,7 +30,7 @@ public final class AppModule_ProvideApplicationFactory implements Factory<Applic
   }
 
   @Override
-  public Application get() {
+  public App get() {
     return provideApplication(module);
   }
 
@@ -38,7 +38,7 @@ public final class AppModule_ProvideApplicationFactory implements Factory<Applic
     return new AppModule_ProvideApplicationFactory(module);
   }
 
-  public static Application provideApplication(AppModule instance) {
+  public static App provideApplication(AppModule instance) {
     return Preconditions.checkNotNullFromProvides(instance.provideApplication());
   }
 }

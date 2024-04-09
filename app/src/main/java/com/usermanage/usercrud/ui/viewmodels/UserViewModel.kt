@@ -17,7 +17,6 @@ class UserViewModel @Inject constructor(
 
     fun getAllUsers() = userRepository.getAllUsers()
 
-
     fun searchUsersByName(name: String): LiveData<List<User>> {
         return userRepository.searchUsersByName(name)
     }
