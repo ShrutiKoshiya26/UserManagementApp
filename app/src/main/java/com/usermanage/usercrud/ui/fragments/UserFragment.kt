@@ -18,20 +18,20 @@ import com.usermanage.usercrud.ui.adapters.UserAdapter
 import com.usermanage.usercrud.ui.viewmodels.UserViewModel
 import com.usermanage.usercrud.utils.Constants.BUNDLE_KEY_FROM_EDIT_USER
 import com.usermanage.usercrud.utils.Constants.BUNDLE_KEY_FROM_WHERE
-import com.usermanage.usercrud.utils.Injector
 import com.usermanage.usercrud.utils.enums.ActionEnum
 import com.usermanage.usercrud.utils.enums.FromWhereEnum
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class UserFragment : Fragment() {
 
     private lateinit var binding: FragmentUserBinding
     private lateinit var adapter: UserAdapter
-    private val viewModel: UserViewModel by viewModels {
-        Injector.getViewModelFactory(requireActivity())
-    }
+
+    private val viewModel: UserViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

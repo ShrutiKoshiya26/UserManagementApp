@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorAccent">#1EA5F6</color>
+    <color name="colorPrimary">#1D2433</color>
+    <color name="colorPrimaryDark">#1D2433</color>
+    <color name="divider_color">#C4C4C4</color>
+    <color name="hintcolor">#979797</color>
+    <color name="ripple_color">#D3D3D3</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add_user">Add User</string>
+    <string name="app_name">UserManagementApp</string>
+    <string name="default_age">30</string>
+    <string name="default_email">john@example.com</string>
+    <string name="default_name">John Doe</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="enter_emailid">Enter EmailId</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data_found">No Data Found \n\nPlease click on "'Add User'" to add records</string>
+    <string name="save">Save</string>
+    <string name="search_by_name">Search by name</string>
+    <style name="Base.Theme.UserManagementApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+    </style>
+    <style name="Theme.UserManagementApp" parent="Base.Theme.UserManagementApp"/>
+    <style name="roundedRipple" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="backgroundTint">@color/ripple_color</item>
+    </style>
+</resources>

@@ -13,17 +13,15 @@ import com.usermanage.usercrud.data.model.User
 import com.usermanage.usercrud.databinding.FragmentEditUserBinding
 import com.usermanage.usercrud.ui.viewmodels.UserViewModel
 import com.usermanage.usercrud.utils.Constants
-import com.usermanage.usercrud.utils.Injector
 import com.usermanage.usercrud.utils.enums.FromWhereEnum
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class EditUserFragment : Fragment() {
 
     private lateinit var binding: FragmentEditUserBinding
 
-    private val viewModel: UserViewModel by viewModels {
-        Injector.getViewModelFactory(requireContext())
-    }
+    private val viewModel: UserViewModel by viewModels()
 
     var userModelFromEdit: User? = null
 

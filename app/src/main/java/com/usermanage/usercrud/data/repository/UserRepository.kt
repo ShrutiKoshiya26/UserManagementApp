@@ -3,9 +3,10 @@ package com.usermanage.usercrud.data.repository
 import androidx.lifecycle.LiveData
 import com.usermanage.usercrud.data.local.UserDao
 import com.usermanage.usercrud.data.model.User
+import javax.inject.Inject
 
 
-class UserRepository(
+class UserRepository @Inject constructor(
     private val userDao: UserDao
 ) {
 

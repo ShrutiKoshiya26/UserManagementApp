@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.usermanage.usercrud.app-mergeDebugResources-57:/layout/item_user.xml",
+        "source": "com.usermanage.usercrud.app-main-60:/layout/item_user.xml"
+    },
+    {
+        "merged": "com.usermanage.usercrud.app-mergeDebugResources-57:/layout/fragment_user.xml",
+        "source": "com.usermanage.usercrud.app-main-60:/layout/fragment_user.xml"
+    },
+    {
+        "merged": "com.usermanage.usercrud.app-mergeDebugResources-57:/layout/fragment_edit_user.xml",
+        "source": "com.usermanage.usercrud.app-main-60:/layout/fragment_edit_user.xml"
+    },
+    {
+        "merged": "com.usermanage.usercrud.app-mergeDebugResources-57:/layout/activity_main.xml",
+        "source": "com.usermanage.usercrud.app-main-60:/layout/activity_main.xml"
+    }
+]

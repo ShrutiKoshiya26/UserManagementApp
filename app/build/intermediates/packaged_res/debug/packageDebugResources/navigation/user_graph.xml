@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_graph"
+    app:startDestination="@id/userFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.usermanage.usercrud.ui.fragments.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_userFragment_to_editUserFragment"
+            app:destination="@id/editUserFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUserFragment"
+        android:name="com.usermanage.usercrud.ui.fragments.EditUserFragment"
+        android:label="fragment_edit_user"
+        tools:layout="@layout/fragment_edit_user">
+        <action
+            android:id="@+id/action_editUserFragment_to_userFragment"
+            app:destination="@id/userFragment"
+            app:popUpTo="@id/userFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
