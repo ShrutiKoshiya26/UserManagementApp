@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.UserManagementApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
@@ -10,4 +10,15 @@
     </style>
 
     <style name="Theme.UserManagementApp" parent="Base.Theme.UserManagementApp" />
+
+    <!--For ripple effect-->
+
+
+    <style name="roundedRipple" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="backgroundTint">@color/ripple_color</item>
+    </style>
+
+
 </resources>

@@ -75,9 +75,7 @@ class EditUserFragment : Fragment() {
                     viewModel.insertUser(user)
                 }
 
-
                 findNavController().navigate(R.id.action_editUserFragment_to_userFragment)
-
             }
 
 

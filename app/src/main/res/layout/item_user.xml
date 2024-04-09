@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="user"
             type="com.usermanage.usercrud.data.model.User" />
@@ -13,16 +12,16 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:paddingVertical="@dimen/_7sdp">
 
         <TextView
             android:id="@+id/nameTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_14sdp"
             android:fontFamily="@font/roboto_medium_500"
-            android:text="@{user.name}"
+            android:text="@{`Name : `+user.name}"
+
             android:textColor="@color/black"
             android:textSize="@dimen/_12ssp"
             app:layout_constraintEnd_toStartOf="@id/editButton"
@@ -35,12 +34,12 @@
             android:id="@+id/emailTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:fontFamily="@font/roboto_medium_500"
-            android:text="@{user.email}"
-
+            android:layout_marginHorizontal="@dimen/_14sdp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@{`Email ID : `+user.email}"
             android:textColor="@color/black"
-            android:textSize="@dimen/_12ssp"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toTopOf="@+id/ageTextView"
             app:layout_constraintEnd_toStartOf="@id/editButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/nameTextView"
@@ -50,49 +49,44 @@
             android:id="@+id/ageTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
-            android:fontFamily="@font/roboto_medium_500"
-            android:text="@{String.valueOf(user.age)}"
+            android:layout_marginHorizontal="@dimen/_14sdp"
+            android:fontFamily="@font/roboto_regular_400"
+            android:text="@{`Age : `+String.valueOf(user.age)}"
             android:textColor="@color/black"
-            android:textSize="@dimen/_12ssp"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/editButton"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/emailTextView"
             tools:text="@string/default_age" />
 
-        <com.google.android.material.button.MaterialButton
+        <ImageView
             android:id="@+id/editButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_8sdp"
             android:layout_marginVertical="@dimen/_8sdp"
-            android:fontFamily="@font/roboto_medium_500"
-            android:foreground="?android:selectableItemBackground"
-            android:text="@string/edit"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_12ssp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_edit_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/deleteButton"
-
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5" />
 
-        <com.google.android.material.button.MaterialButton
+        <ImageView
             android:id="@+id/deleteButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_14sdp"
             android:layout_marginVertical="@dimen/_8sdp"
-            android:fontFamily="@font/roboto_medium_500"
-            android:foreground="?android:selectableItemBackground"
-            android:text="@string/delete"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_12ssp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_delete_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
             app:layout_constraintTop_toTopOf="parent"
 
             app:layout_constraintVertical_bias="0.5" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

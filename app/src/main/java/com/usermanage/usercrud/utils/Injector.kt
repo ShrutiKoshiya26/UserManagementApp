@@ -1,8 +1,8 @@
 package com.usermanage.usercrud.utils
 
 import android.content.Context
+import com.usermanage.usercrud.data.local.UserDatabase
 import com.usermanage.usercrud.data.repository.UserRepository
-import com.usermanage.usercrud.roomdb.dbhelper.UserDatabase
 import com.usermanage.usercrud.ui.viewmodelfactory.ViewModelFactory
 
 object Injector {
