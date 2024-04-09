@@ -18,6 +18,7 @@ import com.usermanage.usercrud.ui.adapters.UserAdapter
 import com.usermanage.usercrud.ui.viewmodels.UserViewModel
 import com.usermanage.usercrud.utils.Constants.BUNDLE_KEY_FROM_EDIT_USER
 import com.usermanage.usercrud.utils.Constants.BUNDLE_KEY_FROM_WHERE
+import com.usermanage.usercrud.utils.DialogUtils
 import com.usermanage.usercrud.utils.enums.ActionEnum
 import com.usermanage.usercrud.utils.enums.FromWhereEnum
 import dagger.hilt.android.AndroidEntryPoint
@@ -129,7 +130,21 @@ class UserFragment : Fragment() {
                 }
 
                 ActionEnum.DELETE -> {
-                    viewModel.deleteUser(user)
+
+                    DialogUtils.showAlertDialog(
+                        context = requireContext(),
+                        title = "Confirmation",
+                        message = "Are you sure you want to delete?",
+                        positiveButtonTitle = "Yes",
+                        negativeButtonTitle = "No",
+                        positiveAction = {
+                            viewModel.deleteUser(user)
+                        },
+                        negativeAction = {
+
+                        }
+                    )
+
 
 
                 }
